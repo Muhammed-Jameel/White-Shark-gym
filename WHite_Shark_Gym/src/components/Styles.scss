@@ -1,0 +1,77 @@
+@import "../index";
+
+#Primarybtn {
+  background-color: $primaryColor;
+  border-radius: 15px;
+  border-color: transparent;
+  width: 215px;
+  height: 64px;
+
+  -webkit-box-shadow: 0px 0px 60px 10px rgba(64, 84, 146, 0.5);
+  -moz-box-shadow: 0px 0px 60px 10px rgba(64, 84, 146, 0.5);
+  box-shadow: 0px 0px 60px 10px rgba(64, 84, 146, 0.5);
+
+  p {
+    color: $textcolor;
+  }
+
+  &:hover {
+    background-color: $textcolor;
+
+    p {
+      color: $primaryColor;
+    }
+  }
+}
+
+.navbar-container {
+  @include flexCenter;
+  margin: 1rem;
+  width: 100vw;
+}
+
+.navbar-links {
+  @include flexCenter;
+  margin: 1rem;
+  width: 80%;
+  justify-content: space-between;
+
+  a:link {
+    text-decoration: none;
+}
+
+}
+
+.sections {
+  @include flexCenter;
+}
+
+.navbar-link {
+  @include navBarFont;
+}
+
+.signing-link {
+
+  background: rgba(64, 84, 146, 0.1);
+border: 1px solid #405492;
+border-radius: 10px;
+width: 150px;
+height: 40px;
+margin-top: 0.75rem;
+  
+
+p {
+  color: $primaryColor;
+  margin-top: 5px;
+}
+
+  &:hover{
+    background-color: $primaryColor;
+    p {
+      color: $textcolor;
+    }
+
+  }
+
+              
+}
